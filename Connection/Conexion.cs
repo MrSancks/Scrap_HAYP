@@ -15,7 +15,7 @@ namespace scrap.Connection
     internal class Conexion<T> where T : IModelo
     {
         private readonly IMongoCollection<T> _collection;
-        const string connectionUri = "mongodb+srv://camiloRojas:WgF43HqZKcYqPjTx@hayp.tmvyz7w.mongodb.net/?retryWrites=true&w=majority";
+        const string connectionUri = "";
         public Conexion()
         {
             var mongoClient = new MongoClient(connectionUri);
